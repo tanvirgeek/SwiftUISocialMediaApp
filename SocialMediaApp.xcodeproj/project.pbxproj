@@ -85,11 +85,11 @@
 				EB55125B255E29FF002F3755 /* Model */,
 				EB55125C255E2A0B002F3755 /* View */,
 				EB55125D255E2A17002F3755 /* ViewModel */,
-				EB55124B255E264F002F3755 /* GoogleService-Info.plist */,
 				EB55123B255E256C002F3755 /* SocialMediaAppApp.swift */,
 				EB55123D255E256C002F3755 /* ContentView.swift */,
 				EB55123F255E256D002F3755 /* Assets.xcassets */,
 				EB551244255E256D002F3755 /* Info.plist */,
+				EB55124B255E264F002F3755 /* GoogleService-Info.plist */,
 				EB551241255E256D002F3755 /* Preview Content */,
 			);
 			path = SocialMediaApp;
