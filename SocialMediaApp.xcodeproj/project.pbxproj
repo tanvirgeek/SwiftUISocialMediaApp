@@ -15,6 +15,8 @@
 		EB55124C255E264F002F3755 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = EB55124B255E264F002F3755 /* GoogleService-Info.plist */; };
 		EB55125F255E2CF2002F3755 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB55125E255E2CF2002F3755 /* LoginView.swift */; };
 		EB551262255E2DF6002F3755 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB551261255E2DF6002F3755 /* LoginViewModel.swift */; };
+		EBBB0C88256743DB006D4B6F /* RegisterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBBB0C87256743DB006D4B6F /* RegisterView.swift */; };
+		EBBB0C9E256755EA006D4B6F /* RegisterViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBBB0C9D256755EA006D4B6F /* RegisterViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +32,8 @@
 		EB55124B255E264F002F3755 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		EB55125E255E2CF2002F3755 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		EB551261255E2DF6002F3755 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
+		EBBB0C87256743DB006D4B6F /* RegisterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterView.swift; sourceTree = "<group>"; };
+		EBBB0C9D256755EA006D4B6F /* RegisterViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,6 +118,7 @@
 			isa = PBXGroup;
 			children = (
 				EB55125E255E2CF2002F3755 /* LoginView.swift */,
+				EBBB0C87256743DB006D4B6F /* RegisterView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -122,6 +127,7 @@
 			isa = PBXGroup;
 			children = (
 				EB551261255E2DF6002F3755 /* LoginViewModel.swift */,
+				EBBB0C9D256755EA006D4B6F /* RegisterViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -241,6 +247,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				EB551262255E2DF6002F3755 /* LoginViewModel.swift in Sources */,
+				EBBB0C9E256755EA006D4B6F /* RegisterViewModel.swift in Sources */,
+				EBBB0C88256743DB006D4B6F /* RegisterView.swift in Sources */,
 				EB55125F255E2CF2002F3755 /* LoginView.swift in Sources */,
 				EB55123E255E256C002F3755 /* ContentView.swift in Sources */,
 				EB55123C255E256C002F3755 /* SocialMediaAppApp.swift in Sources */,

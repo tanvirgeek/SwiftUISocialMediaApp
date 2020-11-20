@@ -4,15 +4,19 @@
 //
 //  Created by MD Tanvir Alam on 13/11/20.
 //
-
+import FirebaseFirestore
 import Foundation
+import SwiftUI
 import Firebase
+
 
 class LoginViewModel:ObservableObject{
     @Published var code = ""
     @Published var number = ""
     @Published var errorMessage = ""
     @Published var error = false
+    @Published var registerUser = false
+    @AppStorage ("current_status") var status = false
     
     func verifyUser(){
         
@@ -34,7 +38,7 @@ class LoginViewModel:ObservableObject{
                         self.errorMessage = err!.localizedDescription
                         return
                     }
-                    print("verified")
+                    self.checkUser()
                 }
             }
             
@@ -56,5 +60,23 @@ class LoginViewModel:ObservableObject{
         }))
         
         UIApplication.shared.windows.first?.rootViewController?.present(alert, animated: true)
+    }
+    
+    func checkUser(){
+        let ref = Firestore.firestore()
+        let uid = Auth.auth().currentUser?.uid
+        ref.collection("Users").whereField("uid", arrayContains: uid).getDocuments { (snap, error) in
+            if error != nil{
+                // no documents
+                // no user found
+                self.registerUser.toggle()
+                return
+            }
+            if snap!.documents.isEmpty{
+                self.registerUser.toggle()
+                return
+            }
+            self.status = true
+        }
     }
 }

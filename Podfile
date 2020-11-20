@@ -7,7 +7,7 @@ target 'SocialMediaApp' do
 
 pod 'Firebase/Storage'
 pod 'Firebase/Auth'
-pod 'Firebase/Storage'
+pod 'Firebase/Firestore'
   # Pods for SocialMediaApp
 
 end

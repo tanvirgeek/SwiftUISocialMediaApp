@@ -49,8 +49,13 @@ struct LoginView: View {
             .opacity(loginVM.number == "" || loginVM.code == "" ? 0.3 : 1)
             Spacer(minLength: 0)
         }.background(Color(#colorLiteral(red: 0.1556647718, green: 0.2962875068, blue: 0.3227478862, alpha: 1))).ignoresSafeArea(.all,edges: .all)
-        .alert(isPresented: $loginVM.error) {
+        
+        .alert(isPresented: $loginVM.error, content: {
             Alert(title: Text("Error"), message: Text(loginVM.errorMessage), dismissButton: .destructive(Text("OK")))
+        })
+        
+        .fullScreenCover(isPresented: $loginVM.registerUser) {
+            RegisterView()
         }
     }
 }
